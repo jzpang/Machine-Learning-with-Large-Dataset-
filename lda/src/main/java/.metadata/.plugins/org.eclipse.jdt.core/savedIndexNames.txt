@@ -1,0 +1,1 @@
+INDEX VERSION 1.129+/Users/jzpang/cmu/study/10605-MLwithLD/hw7/lda/src/main/java/.metadata/.plugins/org.eclipse.jdt.core
