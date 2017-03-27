@@ -1,0 +1,482 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+16/11/28 08:05:29 INFO SparkContext: Running Spark version 1.5.1
+16/11/28 08:05:29 INFO SecurityManager: Changing view acls to: jingzhip
+16/11/28 08:05:29 INFO SecurityManager: Changing modify acls to: jingzhip
+16/11/28 08:05:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(jingzhip); users with modify permissions: Set(jingzhip)
+16/11/28 08:05:30 INFO Slf4jLogger: Slf4jLogger started
+16/11/28 08:05:30 INFO Remoting: Starting remoting
+16/11/28 08:05:30 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@128.2.13.134:39876]
+16/11/28 08:05:30 INFO Utils: Successfully started service 'sparkDriver' on port 39876.
+16/11/28 08:05:30 INFO SparkEnv: Registering MapOutputTracker
+16/11/28 08:05:30 INFO SparkEnv: Registering BlockManagerMaster
+16/11/28 08:05:30 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e2f37957-864c-488f-b3e1-fcdea73d1b2b
+16/11/28 08:05:30 INFO MemoryStore: MemoryStore started with capacity 1060.0 MB
+16/11/28 08:05:30 INFO HttpFileServer: HTTP File server directory is /tmp/spark-ff48b244-17f9-4eae-9ec6-be3b42732af8/httpd-d8e30c83-4e2d-497c-81a3-8d1cf438e0bd
+16/11/28 08:05:30 INFO HttpServer: Starting HTTP Server
+16/11/28 08:05:30 INFO Utils: Successfully started service 'HTTP file server' on port 44251.
+16/11/28 08:05:30 INFO SparkEnv: Registering OutputCommitCoordinator
+16/11/28 08:05:31 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+16/11/28 08:05:31 INFO SparkUI: Started SparkUI at http://128.2.13.134:4040
+16/11/28 08:05:31 INFO Utils: Copying /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py to /tmp/spark-ff48b244-17f9-4eae-9ec6-be3b42732af8/userFiles-64a75f45-7839-4105-a2ec-c219e9ec0545/pf.py
+16/11/28 08:05:31 INFO SparkContext: Added file file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py at file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py with timestamp 1480338331204
+16/11/28 08:05:31 WARN MetricsSystem: Using default name DAGScheduler for source because spark.app.id is not set.
+16/11/28 08:05:31 INFO Executor: Starting executor ID driver on host localhost
+16/11/28 08:05:31 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40793.
+16/11/28 08:05:31 INFO NettyBlockTransferService: Server created on 40793
+16/11/28 08:05:31 INFO BlockManagerMaster: Trying to register BlockManager
+16/11/28 08:05:31 INFO BlockManagerMasterEndpoint: Registering block manager localhost:40793 with 1060.0 MB RAM, BlockManagerId(driver, localhost, 40793)
+16/11/28 08:05:31 INFO BlockManagerMaster: Registered BlockManager
+16/11/28 08:05:32 INFO MemoryStore: ensureFreeSpace(45680) called with curMem=0, maxMem=1111511531
+16/11/28 08:05:32 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 44.6 KB, free 1060.0 MB)
+16/11/28 08:05:32 INFO MemoryStore: ensureFreeSpace(4251) called with curMem=45680, maxMem=1111511531
+16/11/28 08:05:32 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.2 KB, free 1060.0 MB)
+16/11/28 08:05:32 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:40793 (size: 4.2 KB, free: 1060.0 MB)
+16/11/28 08:05:32 INFO SparkContext: Created broadcast 0 from textFile at NativeMethodAccessorImpl.java:-2
+16/11/28 08:05:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+16/11/28 08:05:32 WARN LoadSnappy: Snappy native library not loaded
+16/11/28 08:05:32 INFO FileInputFormat: Total input paths to process : 1
+16/11/28 08:05:32 INFO MemoryStore: ensureFreeSpace(45752) called with curMem=49931, maxMem=1111511531
+16/11/28 08:05:32 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 44.7 KB, free 1059.9 MB)
+16/11/28 08:05:32 INFO MemoryStore: ensureFreeSpace(4251) called with curMem=95683, maxMem=1111511531
+16/11/28 08:05:32 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.2 KB, free 1059.9 MB)
+16/11/28 08:05:32 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:40793 (size: 4.2 KB, free: 1060.0 MB)
+16/11/28 08:05:32 INFO SparkContext: Created broadcast 1 from textFile at NativeMethodAccessorImpl.java:-2
+16/11/28 08:05:32 INFO FileInputFormat: Total input paths to process : 1
+16/11/28 08:05:32 INFO SparkContext: Starting job: collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139
+16/11/28 08:05:32 INFO DAGScheduler: Registering RDD 3 (reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:130)
+16/11/28 08:05:32 INFO DAGScheduler: Registering RDD 13 (distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139)
+16/11/28 08:05:32 INFO DAGScheduler: Got job 0 (collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139) with 2 output partitions
+16/11/28 08:05:32 INFO DAGScheduler: Final stage: ResultStage 2(collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139)
+16/11/28 08:05:32 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+16/11/28 08:05:32 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 1)
+16/11/28 08:05:32 INFO DAGScheduler: Submitting ShuffleMapStage 0 (PairwiseRDD[3] at reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:130), which has no missing parents
+16/11/28 08:05:32 INFO MemoryStore: ensureFreeSpace(12640) called with curMem=99934, maxMem=1111511531
+16/11/28 08:05:32 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 12.3 KB, free 1059.9 MB)
+16/11/28 08:05:32 INFO MemoryStore: ensureFreeSpace(8716) called with curMem=112574, maxMem=1111511531
+16/11/28 08:05:32 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 8.5 KB, free 1059.9 MB)
+16/11/28 08:05:32 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:40793 (size: 8.5 KB, free: 1060.0 MB)
+16/11/28 08:05:32 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:32 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (PairwiseRDD[3] at reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:130)
+16/11/28 08:05:32 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks
+16/11/28 08:05:32 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2225 bytes)
+16/11/28 08:05:32 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 2225 bytes)
+16/11/28 08:05:32 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+16/11/28 08:05:32 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+16/11/28 08:05:32 INFO Executor: Fetching file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py with timestamp 1480338331204
+16/11/28 08:05:32 INFO Utils: /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py has been previously copied to /tmp/spark-ff48b244-17f9-4eae-9ec6-be3b42732af8/userFiles-64a75f45-7839-4105-a2ec-c219e9ec0545/pf.py
+16/11/28 08:05:32 INFO HadoopRDD: Input split: file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/data/bigram_war.txt:0+600942
+16/11/28 08:05:32 INFO HadoopRDD: Input split: file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/data/bigram_war.txt:600942+600942
+16/11/28 08:05:36 INFO PythonRunner: Times: total = 4205, boot = 401, init = 44, finish = 3760
+16/11/28 08:05:36 INFO PythonRunner: Times: total = 4209, boot = 405, init = 42, finish = 3762
+16/11/28 08:05:36 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 2318 bytes result sent to driver
+16/11/28 08:05:36 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2318 bytes result sent to driver
+16/11/28 08:05:36 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 4380 ms on localhost (1/2)
+16/11/28 08:05:36 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 4403 ms on localhost (2/2)
+16/11/28 08:05:36 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+16/11/28 08:05:36 INFO DAGScheduler: ShuffleMapStage 0 (reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:130) finished in 4.423 s
+16/11/28 08:05:36 INFO DAGScheduler: looking for newly runnable stages
+16/11/28 08:05:36 INFO DAGScheduler: running: Set()
+16/11/28 08:05:36 INFO DAGScheduler: waiting: Set(ShuffleMapStage 1, ResultStage 2)
+16/11/28 08:05:36 INFO DAGScheduler: failed: Set()
+16/11/28 08:05:36 INFO DAGScheduler: Missing parents for ShuffleMapStage 1: List()
+16/11/28 08:05:36 INFO DAGScheduler: Missing parents for ResultStage 2: List(ShuffleMapStage 1)
+16/11/28 08:05:36 INFO DAGScheduler: Submitting ShuffleMapStage 1 (PairwiseRDD[13] at distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139), which is now runnable
+16/11/28 08:05:36 INFO MemoryStore: ensureFreeSpace(7640) called with curMem=121290, maxMem=1111511531
+16/11/28 08:05:36 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 7.5 KB, free 1059.9 MB)
+16/11/28 08:05:36 INFO MemoryStore: ensureFreeSpace(4831) called with curMem=128930, maxMem=1111511531
+16/11/28 08:05:36 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.7 KB, free 1059.9 MB)
+16/11/28 08:05:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on localhost:40793 (size: 4.7 KB, free: 1060.0 MB)
+16/11/28 08:05:36 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:37 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (PairwiseRDD[13] at distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139)
+16/11/28 08:05:37 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks
+16/11/28 08:05:37 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2, localhost, PROCESS_LOCAL, 1951 bytes)
+16/11/28 08:05:37 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3, localhost, PROCESS_LOCAL, 1951 bytes)
+16/11/28 08:05:37 INFO Executor: Running task 1.0 in stage 1.0 (TID 3)
+16/11/28 08:05:37 INFO Executor: Running task 0.0 in stage 1.0 (TID 2)
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 4 ms
+16/11/28 08:05:37 INFO PythonRunner: Times: total = 62, boot = -119, init = 123, finish = 58
+16/11/28 08:05:37 INFO PythonRunner: Times: total = 63, boot = -119, init = 123, finish = 59
+16/11/28 08:05:37 INFO Executor: Finished task 1.0 in stage 1.0 (TID 3). 1439 bytes result sent to driver
+16/11/28 08:05:37 INFO Executor: Finished task 0.0 in stage 1.0 (TID 2). 1439 bytes result sent to driver
+16/11/28 08:05:37 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 95 ms on localhost (1/2)
+16/11/28 08:05:37 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 97 ms on localhost (2/2)
+16/11/28 08:05:37 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+16/11/28 08:05:37 INFO DAGScheduler: ShuffleMapStage 1 (distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139) finished in 0.099 s
+16/11/28 08:05:37 INFO DAGScheduler: looking for newly runnable stages
+16/11/28 08:05:37 INFO DAGScheduler: running: Set()
+16/11/28 08:05:37 INFO DAGScheduler: waiting: Set(ResultStage 2)
+16/11/28 08:05:37 INFO DAGScheduler: failed: Set()
+16/11/28 08:05:37 INFO DAGScheduler: Missing parents for ResultStage 2: List()
+16/11/28 08:05:37 INFO DAGScheduler: Submitting ResultStage 2 (PythonRDD[16] at collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139), which is now runnable
+16/11/28 08:05:37 INFO MemoryStore: ensureFreeSpace(5504) called with curMem=133761, maxMem=1111511531
+16/11/28 08:05:37 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 5.4 KB, free 1059.9 MB)
+16/11/28 08:05:37 INFO MemoryStore: ensureFreeSpace(3334) called with curMem=139265, maxMem=1111511531
+16/11/28 08:05:37 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.3 KB, free 1059.9 MB)
+16/11/28 08:05:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on localhost:40793 (size: 3.3 KB, free: 1060.0 MB)
+16/11/28 08:05:37 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:37 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 2 (PythonRDD[16] at collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139)
+16/11/28 08:05:37 INFO TaskSchedulerImpl: Adding task set 2.0 with 2 tasks
+16/11/28 08:05:37 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:37 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 5, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:37 INFO Executor: Running task 1.0 in stage 2.0 (TID 5)
+16/11/28 08:05:37 INFO Executor: Running task 0.0 in stage 2.0 (TID 4)
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:37 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/28 08:05:37 INFO PythonRunner: Times: total = 19, boot = -20, init = 22, finish = 17
+16/11/28 08:05:37 INFO Executor: Finished task 1.0 in stage 2.0 (TID 5). 156606 bytes result sent to driver
+16/11/28 08:05:37 INFO PythonRunner: Times: total = 19, boot = -21, init = 23, finish = 17
+16/11/28 08:05:37 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 5) in 26 ms on localhost (1/2)
+16/11/28 08:05:37 INFO Executor: Finished task 0.0 in stage 2.0 (TID 4). 158199 bytes result sent to driver
+16/11/28 08:05:37 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 29 ms on localhost (2/2)
+16/11/28 08:05:37 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+16/11/28 08:05:37 INFO DAGScheduler: ResultStage 2 (collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139) finished in 0.031 s
+16/11/28 08:05:37 INFO DAGScheduler: Job 0 finished: collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:139, took 4.651436 s
+16/11/28 08:05:37 INFO SparkContext: Starting job: collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140
+16/11/28 08:05:37 INFO DAGScheduler: Registering RDD 9 (reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:137)
+16/11/28 08:05:37 INFO DAGScheduler: Registering RDD 18 (distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140)
+16/11/28 08:05:37 INFO DAGScheduler: Got job 1 (collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140) with 2 output partitions
+16/11/28 08:05:37 INFO DAGScheduler: Final stage: ResultStage 5(collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140)
+16/11/28 08:05:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+16/11/28 08:05:37 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 4)
+16/11/28 08:05:37 INFO DAGScheduler: Submitting ShuffleMapStage 3 (PairwiseRDD[9] at reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:137), which has no missing parents
+16/11/28 08:05:37 INFO MemoryStore: ensureFreeSpace(12640) called with curMem=142599, maxMem=1111511531
+16/11/28 08:05:37 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 12.3 KB, free 1059.9 MB)
+16/11/28 08:05:37 INFO MemoryStore: ensureFreeSpace(8722) called with curMem=155239, maxMem=1111511531
+16/11/28 08:05:37 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 8.5 KB, free 1059.9 MB)
+16/11/28 08:05:37 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on localhost:40793 (size: 8.5 KB, free: 1060.0 MB)
+16/11/28 08:05:37 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:37 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (PairwiseRDD[9] at reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:137)
+16/11/28 08:05:37 INFO TaskSchedulerImpl: Adding task set 3.0 with 2 tasks
+16/11/28 08:05:37 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 6, localhost, PROCESS_LOCAL, 2226 bytes)
+16/11/28 08:05:37 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 7, localhost, PROCESS_LOCAL, 2226 bytes)
+16/11/28 08:05:37 INFO Executor: Running task 0.0 in stage 3.0 (TID 6)
+16/11/28 08:05:37 INFO Executor: Running task 1.0 in stage 3.0 (TID 7)
+16/11/28 08:05:37 INFO HadoopRDD: Input split: file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/data/unigram_war.txt:0+488504
+16/11/28 08:05:37 INFO HadoopRDD: Input split: file:/afs/andrew.cmu.edu/usr3/jingzhip/605hw6/data/unigram_war.txt:488504+488504
+16/11/28 08:05:38 INFO PythonRunner: Times: total = 1780, boot = -66, init = 71, finish = 1775
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 3.0 (TID 6). 2318 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 6) in 1794 ms on localhost (1/2)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 1815, boot = -73, init = 79, finish = 1809
+16/11/28 08:05:39 INFO Executor: Finished task 1.0 in stage 3.0 (TID 7). 2318 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 7) in 1829 ms on localhost (2/2)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+16/11/28 08:05:39 INFO DAGScheduler: ShuffleMapStage 3 (reduceByKey at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:137) finished in 1.830 s
+16/11/28 08:05:39 INFO DAGScheduler: looking for newly runnable stages
+16/11/28 08:05:39 INFO DAGScheduler: running: Set()
+16/11/28 08:05:39 INFO DAGScheduler: waiting: Set(ResultStage 5, ShuffleMapStage 4)
+16/11/28 08:05:39 INFO DAGScheduler: failed: Set()
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents for ResultStage 5: List(ShuffleMapStage 4)
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents for ShuffleMapStage 4: List()
+16/11/28 08:05:39 INFO DAGScheduler: Submitting ShuffleMapStage 4 (PairwiseRDD[18] at distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140), which is now runnable
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(7640) called with curMem=163961, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 7.5 KB, free 1059.9 MB)
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(4833) called with curMem=171601, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.7 KB, free 1059.9 MB)
+16/11/28 08:05:39 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on localhost:40793 (size: 4.7 KB, free: 1060.0 MB)
+16/11/28 08:05:39 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:39 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 4 (PairwiseRDD[18] at distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Adding task set 4.0 with 2 tasks
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 8, localhost, PROCESS_LOCAL, 1951 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 9, localhost, PROCESS_LOCAL, 1951 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 1.0 in stage 4.0 (TID 9)
+16/11/28 08:05:39 INFO Executor: Running task 0.0 in stage 4.0 (TID 8)
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 36, boot = -16, init = 18, finish = 34
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 4.0 (TID 8). 1439 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 8) in 45 ms on localhost (1/2)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 58, boot = -50, init = 52, finish = 56
+16/11/28 08:05:39 INFO Executor: Finished task 1.0 in stage 4.0 (TID 9). 1439 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 9) in 69 ms on localhost (2/2)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+16/11/28 08:05:39 INFO DAGScheduler: ShuffleMapStage 4 (distinct at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140) finished in 0.070 s
+16/11/28 08:05:39 INFO DAGScheduler: looking for newly runnable stages
+16/11/28 08:05:39 INFO DAGScheduler: running: Set()
+16/11/28 08:05:39 INFO DAGScheduler: waiting: Set(ResultStage 5)
+16/11/28 08:05:39 INFO DAGScheduler: failed: Set()
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents for ResultStage 5: List()
+16/11/28 08:05:39 INFO DAGScheduler: Submitting ResultStage 5 (PythonRDD[21] at collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140), which is now runnable
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(5504) called with curMem=176434, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 5.4 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(3336) called with curMem=181938, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 3.3 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on localhost:40793 (size: 3.3 KB, free: 1060.0 MB)
+16/11/28 08:05:39 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:39 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 5 (PythonRDD[21] at collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Adding task set 5.0 with 2 tasks
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 10, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 11, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 1.0 in stage 5.0 (TID 11)
+16/11/28 08:05:39 INFO Executor: Running task 0.0 in stage 5.0 (TID 10)
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 24, boot = -14, init = 16, finish = 22
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 5.0 (TID 10). 102728 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 10) in 32 ms on localhost (1/2)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 50, boot = -38, init = 40, finish = 48
+16/11/28 08:05:39 INFO Executor: Finished task 1.0 in stage 5.0 (TID 11). 101867 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 11) in 55 ms on localhost (2/2)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+16/11/28 08:05:39 INFO DAGScheduler: ResultStage 5 (collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140) finished in 0.057 s
+16/11/28 08:05:39 INFO DAGScheduler: Job 1 finished: collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:140, took 1.988648 s
+16/11/28 08:05:39 INFO SparkContext: Starting job: reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144
+16/11/28 08:05:39 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 1 is 152 bytes
+16/11/28 08:05:39 INFO DAGScheduler: Got job 2 (reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144) with 2 output partitions
+16/11/28 08:05:39 INFO DAGScheduler: Final stage: ResultStage 7(reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144)
+16/11/28 08:05:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 6)
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents: List()
+16/11/28 08:05:39 INFO DAGScheduler: Submitting ResultStage 7 (PythonRDD[22] at reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144), which has no missing parents
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(6024) called with curMem=185274, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 5.9 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(3735) called with curMem=191298, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 3.6 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on localhost:40793 (size: 3.6 KB, free: 1060.0 MB)
+16/11/28 08:05:39 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:39 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 7 (PythonRDD[22] at reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Adding task set 7.0 with 2 tasks
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 12, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 13, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 1.0 in stage 7.0 (TID 13)
+16/11/28 08:05:39 INFO Executor: Running task 0.0 in stage 7.0 (TID 12)
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 38, boot = -70, init = 72, finish = 36
+16/11/28 08:05:39 INFO Executor: Finished task 1.0 in stage 7.0 (TID 13). 1256 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 13) in 44 ms on localhost (1/2)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 78, boot = -49, init = 52, finish = 75
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 7.0 (TID 12). 1256 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 12) in 86 ms on localhost (2/2)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+16/11/28 08:05:39 INFO DAGScheduler: ResultStage 7 (reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144) finished in 0.086 s
+16/11/28 08:05:39 INFO DAGScheduler: Job 2 finished: reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:144, took 0.106495 s
+16/11/28 08:05:39 INFO SparkContext: Starting job: reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146
+16/11/28 08:05:39 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 3 is 152 bytes
+16/11/28 08:05:39 INFO DAGScheduler: Got job 3 (reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146) with 2 output partitions
+16/11/28 08:05:39 INFO DAGScheduler: Final stage: ResultStage 9(reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146)
+16/11/28 08:05:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 8)
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents: List()
+16/11/28 08:05:39 INFO DAGScheduler: Submitting ResultStage 9 (PythonRDD[23] at reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146), which has no missing parents
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(6024) called with curMem=195033, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 5.9 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(3739) called with curMem=201057, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.7 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on localhost:40793 (size: 3.7 KB, free: 1060.0 MB)
+16/11/28 08:05:39 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:39 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 9 (PythonRDD[23] at reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Adding task set 9.0 with 2 tasks
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 14, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 1.0 in stage 9.0 (TID 15, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 1.0 in stage 9.0 (TID 15)
+16/11/28 08:05:39 INFO Executor: Running task 0.0 in stage 9.0 (TID 14)
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 17, boot = -73, init = 75, finish = 15
+16/11/28 08:05:39 INFO Executor: Finished task 1.0 in stage 9.0 (TID 15). 1270 bytes result sent to driver
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 18, boot = -31, init = 34, finish = 15
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 1.0 in stage 9.0 (TID 15) in 22 ms on localhost (1/2)
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 9.0 (TID 14). 1270 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 14) in 25 ms on localhost (2/2)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+16/11/28 08:05:39 INFO DAGScheduler: ResultStage 9 (reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146) finished in 0.026 s
+16/11/28 08:05:39 INFO DAGScheduler: Job 3 finished: reduce at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:146, took 0.036943 s
+16/11/28 08:05:39 INFO SparkContext: Starting job: collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166
+16/11/28 08:05:39 INFO DAGScheduler: Registering RDD 28 (leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:151)
+16/11/28 08:05:39 INFO DAGScheduler: Registering RDD 35 (leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:156)
+16/11/28 08:05:39 INFO DAGScheduler: Got job 4 (collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166) with 6 output partitions
+16/11/28 08:05:39 INFO DAGScheduler: Final stage: ResultStage 15(collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166)
+16/11/28 08:05:39 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 14)
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 14)
+16/11/28 08:05:39 INFO DAGScheduler: Submitting ShuffleMapStage 12 (PairwiseRDD[28] at leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:151), which has no missing parents
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(12288) called with curMem=204796, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 12.0 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(6324) called with curMem=217084, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 6.2 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on localhost:40793 (size: 6.2 KB, free: 1060.0 MB)
+16/11/28 08:05:39 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:39 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 12 (PairwiseRDD[28] at leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:151)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Adding task set 12.0 with 4 tasks
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 16, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 1.0 in stage 12.0 (TID 17, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 2.0 in stage 12.0 (TID 18, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 3.0 in stage 12.0 (TID 19, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 0.0 in stage 12.0 (TID 16)
+16/11/28 08:05:39 INFO Executor: Running task 1.0 in stage 12.0 (TID 17)
+16/11/28 08:05:39 INFO Executor: Running task 2.0 in stage 12.0 (TID 18)
+16/11/28 08:05:39 INFO Executor: Running task 3.0 in stage 12.0 (TID 19)
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 47, boot = -143, init = 146, finish = 44
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 58, boot = 2, init = 4, finish = 52
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 98, boot = -144, init = 146, finish = 96
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 112, boot = 5, init = 3, finish = 104
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 88, boot = 3, init = 13, finish = 72
+16/11/28 08:05:39 INFO Executor: Finished task 3.0 in stage 12.0 (TID 19). 1441 bytes result sent to driver
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 99, boot = -7, init = 43, finish = 63
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 3.0 in stage 12.0 (TID 19) in 172 ms on localhost (1/4)
+16/11/28 08:05:39 INFO Executor: Finished task 1.0 in stage 12.0 (TID 17). 1441 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 1.0 in stage 12.0 (TID 17) in 177 ms on localhost (2/4)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 116, boot = 2, init = 15, finish = 99
+16/11/28 08:05:39 INFO Executor: Finished task 2.0 in stage 12.0 (TID 18). 1441 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 2.0 in stage 12.0 (TID 18) in 209 ms on localhost (3/4)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 122, boot = 2, init = 24, finish = 96
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 12.0 (TID 16). 1441 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 16) in 254 ms on localhost (4/4)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+16/11/28 08:05:39 INFO DAGScheduler: ShuffleMapStage 12 (leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:151) finished in 0.255 s
+16/11/28 08:05:39 INFO DAGScheduler: looking for newly runnable stages
+16/11/28 08:05:39 INFO DAGScheduler: running: Set()
+16/11/28 08:05:39 INFO DAGScheduler: waiting: Set(ResultStage 15, ShuffleMapStage 14)
+16/11/28 08:05:39 INFO DAGScheduler: failed: Set()
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents for ResultStage 15: List(ShuffleMapStage 14)
+16/11/28 08:05:39 INFO DAGScheduler: Missing parents for ShuffleMapStage 14: List()
+16/11/28 08:05:39 INFO DAGScheduler: Submitting ShuffleMapStage 14 (PairwiseRDD[35] at leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:156), which is now runnable
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(14112) called with curMem=223408, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 13.8 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO MemoryStore: ensureFreeSpace(7352) called with curMem=237520, maxMem=1111511531
+16/11/28 08:05:39 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 7.2 KB, free 1059.8 MB)
+16/11/28 08:05:39 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on localhost:40793 (size: 7.2 KB, free: 1060.0 MB)
+16/11/28 08:05:39 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:39 INFO DAGScheduler: Submitting 6 missing tasks from ShuffleMapStage 14 (PairwiseRDD[35] at leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:156)
+16/11/28 08:05:39 INFO TaskSchedulerImpl: Adding task set 14.0 with 6 tasks
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 20, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 1.0 in stage 14.0 (TID 21, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 2.0 in stage 14.0 (TID 22, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 3.0 in stage 14.0 (TID 23, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 4.0 in stage 14.0 (TID 24, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 0.0 in stage 14.0 (TID 20)
+16/11/28 08:05:39 INFO Executor: Running task 3.0 in stage 14.0 (TID 23)
+16/11/28 08:05:39 INFO Executor: Running task 2.0 in stage 14.0 (TID 22)
+16/11/28 08:05:39 INFO Executor: Running task 1.0 in stage 14.0 (TID 21)
+16/11/28 08:05:39 INFO Executor: Running task 4.0 in stage 14.0 (TID 24)
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks out of 4 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks out of 4 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks out of 4 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 4 non-empty blocks out of 4 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 48, boot = -133, init = 137, finish = 44
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 68, boot = -157, init = 160, finish = 65
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 69, boot = -93, init = 98, finish = 64
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 12, boot = -11, init = 13, finish = 10
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 16, boot = 6, init = 1, finish = 9
+16/11/28 08:05:39 INFO Executor: Finished task 2.0 in stage 14.0 (TID 22). 1443 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Starting task 5.0 in stage 14.0 (TID 25, localhost, PROCESS_LOCAL, 2060 bytes)
+16/11/28 08:05:39 INFO Executor: Running task 5.0 in stage 14.0 (TID 25)
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 2.0 in stage 14.0 (TID 22) in 95 ms on localhost (1/6)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 89, boot = -193, init = 196, finish = 86
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Getting 2 non-empty blocks out of 2 blocks
+16/11/28 08:05:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/28 08:05:39 INFO Executor: Finished task 3.0 in stage 14.0 (TID 23). 1443 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 3.0 in stage 14.0 (TID 23) in 103 ms on localhost (2/6)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 13, boot = -12, init = 15, finish = 10
+16/11/28 08:05:39 INFO Executor: Finished task 0.0 in stage 14.0 (TID 20). 1443 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 20) in 117 ms on localhost (3/6)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 83, boot = -126, init = 142, finish = 67
+16/11/28 08:05:39 INFO Executor: Finished task 4.0 in stage 14.0 (TID 24). 1443 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 4.0 in stage 14.0 (TID 24) in 130 ms on localhost (4/6)
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 137, boot = -139, init = 142, finish = 134
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 51, boot = -8, init = 11, finish = 48
+16/11/28 08:05:39 INFO PythonRunner: Times: total = 77, boot = -36, init = 52, finish = 61
+16/11/28 08:05:39 INFO Executor: Finished task 5.0 in stage 14.0 (TID 25). 1443 bytes result sent to driver
+16/11/28 08:05:39 INFO TaskSetManager: Finished task 5.0 in stage 14.0 (TID 25) in 125 ms on localhost (5/6)
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 156, boot = -115, init = 156, finish = 115
+16/11/28 08:05:40 INFO Executor: Finished task 1.0 in stage 14.0 (TID 21). 1443 bytes result sent to driver
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 1.0 in stage 14.0 (TID 21) in 234 ms on localhost (6/6)
+16/11/28 08:05:40 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+16/11/28 08:05:40 INFO DAGScheduler: ShuffleMapStage 14 (leftOuterJoin at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:156) finished in 0.235 s
+16/11/28 08:05:40 INFO DAGScheduler: looking for newly runnable stages
+16/11/28 08:05:40 INFO DAGScheduler: running: Set()
+16/11/28 08:05:40 INFO DAGScheduler: waiting: Set(ResultStage 15)
+16/11/28 08:05:40 INFO DAGScheduler: failed: Set()
+16/11/28 08:05:40 INFO DAGScheduler: Missing parents for ResultStage 15: List()
+16/11/28 08:05:40 INFO DAGScheduler: Submitting ResultStage 15 (PythonRDD[38] at collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166), which is now runnable
+16/11/28 08:05:40 INFO MemoryStore: ensureFreeSpace(9080) called with curMem=244872, maxMem=1111511531
+16/11/28 08:05:40 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 8.9 KB, free 1059.8 MB)
+16/11/28 08:05:40 INFO MemoryStore: ensureFreeSpace(5594) called with curMem=253952, maxMem=1111511531
+16/11/28 08:05:40 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 5.5 KB, free 1059.8 MB)
+16/11/28 08:05:40 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on localhost:40793 (size: 5.5 KB, free: 1060.0 MB)
+16/11/28 08:05:40 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:861
+16/11/28 08:05:40 INFO DAGScheduler: Submitting 6 missing tasks from ResultStage 15 (PythonRDD[38] at collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166)
+16/11/28 08:05:40 INFO TaskSchedulerImpl: Adding task set 15.0 with 6 tasks
+16/11/28 08:05:40 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 26, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:40 INFO TaskSetManager: Starting task 1.0 in stage 15.0 (TID 27, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:40 INFO TaskSetManager: Starting task 2.0 in stage 15.0 (TID 28, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:40 INFO TaskSetManager: Starting task 3.0 in stage 15.0 (TID 29, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:40 INFO TaskSetManager: Starting task 4.0 in stage 15.0 (TID 30, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:40 INFO Executor: Running task 0.0 in stage 15.0 (TID 26)
+16/11/28 08:05:40 INFO Executor: Running task 3.0 in stage 15.0 (TID 29)
+16/11/28 08:05:40 INFO Executor: Running task 4.0 in stage 15.0 (TID 30)
+16/11/28 08:05:40 INFO Executor: Running task 2.0 in stage 15.0 (TID 28)
+16/11/28 08:05:40 INFO Executor: Running task 1.0 in stage 15.0 (TID 27)
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks out of 6 blocks
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks out of 6 blocks
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks out of 6 blocks
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks out of 6 blocks
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks out of 6 blocks
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 57, boot = -144, init = 146, finish = 55
+16/11/28 08:05:40 INFO Executor: Finished task 0.0 in stage 15.0 (TID 26). 41164 bytes result sent to driver
+16/11/28 08:05:40 INFO TaskSetManager: Starting task 5.0 in stage 15.0 (TID 31, localhost, PROCESS_LOCAL, 1962 bytes)
+16/11/28 08:05:40 INFO Executor: Running task 5.0 in stage 15.0 (TID 31)
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 26) in 66 ms on localhost (1/6)
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 61, boot = -99, init = 105, finish = 55
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Getting 6 non-empty blocks out of 6 blocks
+16/11/28 08:05:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+16/11/28 08:05:40 INFO Executor: Finished task 1.0 in stage 15.0 (TID 27). 41327 bytes result sent to driver
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 1.0 in stage 15.0 (TID 27) in 70 ms on localhost (2/6)
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 88, boot = -120, init = 123, finish = 85
+16/11/28 08:05:40 INFO Executor: Finished task 2.0 in stage 15.0 (TID 28). 42271 bytes result sent to driver
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 92, boot = -131, init = 140, finish = 83
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 2.0 in stage 15.0 (TID 28) in 96 ms on localhost (3/6)
+16/11/28 08:05:40 INFO Executor: Finished task 4.0 in stage 15.0 (TID 30). 39794 bytes result sent to driver
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 4.0 in stage 15.0 (TID 30) in 98 ms on localhost (4/6)
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 86, boot = -92, init = 96, finish = 82
+16/11/28 08:05:40 INFO Executor: Finished task 5.0 in stage 15.0 (TID 31). 41267 bytes result sent to driver
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 5.0 in stage 15.0 (TID 31) in 93 ms on localhost (5/6)
+16/11/28 08:05:40 INFO PythonRunner: Times: total = 156, boot = -90, init = 96, finish = 150
+16/11/28 08:05:40 INFO Executor: Finished task 3.0 in stage 15.0 (TID 29). 254600 bytes result sent to driver
+16/11/28 08:05:40 INFO TaskSetManager: Finished task 3.0 in stage 15.0 (TID 29) in 166 ms on localhost (6/6)
+16/11/28 08:05:40 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+16/11/28 08:05:40 INFO DAGScheduler: ResultStage 15 (collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166) finished in 0.167 s
+16/11/28 08:05:40 INFO DAGScheduler: Job 4 finished: collect at /afs/andrew.cmu.edu/usr3/jingzhip/605hw6/pf.py:166, took 0.703861 s
+16/11/28 08:05:40 INFO SparkUI: Stopped Spark web UI at http://128.2.13.134:4040
+16/11/28 08:05:40 INFO DAGScheduler: Stopping DAGScheduler
+16/11/28 08:05:40 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+16/11/28 08:05:40 INFO MemoryStore: MemoryStore cleared
+16/11/28 08:05:40 INFO BlockManager: BlockManager stopped
+16/11/28 08:05:40 INFO BlockManagerMaster: BlockManagerMaster stopped
+16/11/28 08:05:40 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+16/11/28 08:05:40 INFO SparkContext: Successfully stopped SparkContext
+16/11/28 08:05:40 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+16/11/28 08:05:40 INFO RemoteActorRefProvider$RemotingTerminator: Remote daemon shut down; proceeding with flushing remote transports.
+16/11/28 08:05:40 INFO RemoteActorRefProvider$RemotingTerminator: Remoting shut down.
+16/11/28 08:05:41 INFO ShutdownHookManager: Shutdown hook called
+16/11/28 08:05:41 INFO ShutdownHookManager: Deleting directory /tmp/spark-ff48b244-17f9-4eae-9ec6-be3b42732af8/pyspark-d0038e0d-5c79-4d1f-9c9d-fa73f8896d2b
+16/11/28 08:05:41 INFO ShutdownHookManager: Deleting directory /tmp/spark-ff48b244-17f9-4eae-9ec6-be3b42732af8
